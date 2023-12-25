@@ -1,2 +1,2 @@
 # wire-pod-plugins
-Custom plugins wire wire-pod
+Custom plugins for wire-pod
