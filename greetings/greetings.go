@@ -18,7 +18,7 @@ func getResonse(event string) string {
   myResponse := "huh"
   rand.Seed(time.Now().UnixNano())
   min := 0
-  max := 4
+  max := 3
   index := rand.Intn(max-min+1) + min
 
   
