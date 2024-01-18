@@ -98,7 +98,7 @@ func inTimeSpan(start, end time.Time) bool {
 	return _check.After(_start) && _check.Before(_end)
 }
 
-func Action(transcribedText string, botSerial string) (string, string) {
+func Action(transcribedText string, botSerial string, guid string, target string) (string, string) {
 	myResonse := "huh"
 	timelayout := "15:04"
 	if strings.Contains(strings.ToLower(transcribedText), "morning") {

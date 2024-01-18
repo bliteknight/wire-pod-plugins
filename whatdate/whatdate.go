@@ -8,7 +8,7 @@ import (
 var Utterances = []string{"what day is it", "date today", "date", "what's today's date"}
 var Name = "Correct Date"
 
-func Action(transcribedText string, botSerial string) (string, string) {
+func Action(transcribedText string, botSerial string, guid string, target string) (string, string) {
 	year, month, day := time.Now().Date()
 	yearSring := strconv.FormatInt(int64(year), 10)
 

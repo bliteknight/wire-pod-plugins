@@ -17,7 +17,7 @@ func CountWords(s string) int {
 	return len(strings.Fields(s))
 }
 
-func Action(transcribedText string, botSerial string) (string, string) {
+func Action(transcribedText string, botSerial string, guid string, target string) (string, string) {
 
   VECTOR_PHRASE := stripOutTriggerWords(transcribedText)
 
